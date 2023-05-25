@@ -31,6 +31,15 @@ Doublelinkedlist::Doublelinkedlist() {
 	START = NULL;
 }
 
+void Doublelinkedlist::addNode() {
+	int nim;
+	string nm;
+	cout << "\nEnter the roll number of student";
+	cin >> nim;
+	cout << "\nEnter the name of the student: ";
+	cin >> nm;
+	
+};
 int main()
 {
     std::cout << "Hello World!\n";
