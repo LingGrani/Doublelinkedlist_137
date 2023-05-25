@@ -27,6 +27,10 @@ private:
 	Node* START;
 };
 
+Doublelinkedlist::Doublelinkedlist() {
+	START = NULL;
+}
+
 int main()
 {
     std::cout << "Hello World!\n";
