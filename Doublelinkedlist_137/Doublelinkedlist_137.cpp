@@ -86,6 +86,22 @@ bool Doublelinkedlist::search(int rollNo, Node** previous, Node** current) {
 	return (*current != NULL);
 };
 
+bool Doublelinkedlist::deleteNode(int rollNo) {
+	Node* previous, * current;
+	previous = current = NULL;
+	if (search(rollNo, &previous, &current) == false) {
+		return false;
+	};
+	if (current->next != NULL) {
+		current->next->prev = previous; //step 2
+	};
+	if (previous != NULL) {
+		previous->next = current->next;//steap 3
+	}
+	else {
+		START = current->next;
+	};
+};
 int main()
 {
     std::cout << "Hello World!\n";
