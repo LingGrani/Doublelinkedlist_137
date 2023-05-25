@@ -48,7 +48,13 @@ void Doublelinkedlist::addNode() {
 			cout << "\nDuplicate number not allowed" << endl;
 			return;
 		}
-		
+		newnode->next = START; //step 3
+		if (START != NULL){
+			START->prev = newnode; //step 4
+			newnode->prev = NULL; //step 5
+			START = newnode; //step 6
+			return;
+		}
 	}
 	
 };
