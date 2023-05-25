@@ -147,7 +147,8 @@ void Doublelinkedlist::hapus() {
 	int rollNo;
 	cin >> rollNo;
 	cout << endl;
-	
+	if (Doublelinkedlist::deleteNode(rollNo)==false)
+		cout << "Record not found"
 }
 int main(){
     std::cout << "Hello World!\n";
