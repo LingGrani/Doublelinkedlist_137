@@ -76,6 +76,16 @@ void Doublelinkedlist::addNode() {
 	}
 };
 
+bool Doublelinkedlist::search(int rollNo, Node** previous, Node** current) {
+	*previous = START; //step 1.a
+	*current = START;//step 1.b
+	while (*current != NULL && rollNo != (*current)->noMhs){
+		*previous = *current;//step 1.d
+		*current = (*current)->next;//step 1.e
+	}
+	return (*current != NULL);
+};
+
 int main()
 {
     std::cout << "Hello World!\n";
