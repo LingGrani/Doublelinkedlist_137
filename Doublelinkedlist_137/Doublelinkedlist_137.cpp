@@ -136,8 +136,19 @@ void Doublelinkedlist::revtraverse() {
 			cout << currentNode->noMhs << "" << currentNode->Nama << endl;
 			currentNode = currentNode->prev;
 		};
+	}
 };
 
+void Doublelinkedlist::hapus() {
+	if (listEmpty()){
+		cout << "\nlist is empty" << endl;
+	}
+	cout << "\nEnter the roll number of the student whose record is to be delete";
+	int rollNo;
+	cin >> rollNo;
+	cout << endl;
+	
+}
 int main(){
     std::cout << "Hello World!\n";
 }
