@@ -11,6 +11,22 @@ public:
 	Node* prev;
 };
 
+class Doublelinkedlist
+{
+public:
+	Doublelinkedlist();
+	void addNode();
+	bool search(int rollNo, Node** previous, Node** current);
+	bool deleteNode(int rollNo);
+	bool listEmpty();
+	void traverse();
+	void revtraverse();
+	void hapus();
+	void searchdata();
+private:
+	Node* START;
+};
+
 int main()
 {
     std::cout << "Hello World!\n";
